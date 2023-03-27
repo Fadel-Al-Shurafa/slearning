@@ -1,0 +1,20 @@
+.HeaderContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    background-color: black;
+    height: 84px;
+}
+.headerFlexItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 20px;
+}
+.headerFlexItems h3{
+    color: #fff;
+    padding: 5px 40px;
+    margin-top: 15px;
+}
