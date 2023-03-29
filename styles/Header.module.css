@@ -4,17 +4,23 @@
     justify-content: space-between;
     text-align: center;
     background-color: black;
-    height: 84px;
+    height: 86px;
 }
 .headerFlexItems{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
-    padding: 10px 20px;
+    padding: 12px 20px;
 }
 .headerFlexItems h3{
     color: #fff;
-    padding: 5px 40px;
+    padding: 0 40px;
     margin-top: 15px;
+}
+.headerFlexItems h3:hover{
+    color: #fff;
+    border-bottom: 2px #fff solid ;
+    cursor: pointer;
+    
 }

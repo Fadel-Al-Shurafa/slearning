@@ -1,0 +1,29 @@
+.homeBody{
+    margin-top: 300px;
+}
+.Why{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    
+    
+}
+.Why h2{
+    margin-bottom: 100px;
+    font-size: 32px;
+}    
+.Why p{
+    margin: 10px auto 100px auto;
+    font-size: 22px;
+    width: 60%;
+} 
+
+.LearnContainer{
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    
+}
+.learnFlex{
+    margin: 0 40px a;
+}
