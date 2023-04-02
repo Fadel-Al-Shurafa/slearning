@@ -1,5 +1,6 @@
 .homeBody{
     margin-top: 300px;
+    height: 400vh;
 }
 .Why{
     text-align: center;
@@ -19,11 +20,32 @@
 } 
 
 .LearnContainer{
-    margin-top: 300px;
+    margin: 400px 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 180px;
+    
     
 }
 .learnFlex{
     margin: 0 40px a;
+}
+.learnContent{
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.postContainer{
+    margin: 300px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 160px;
+    
+}
+.postFlex{
+    margin: 0 40px a;
+}
+.postContent{
+    margin-left: 160px;
+    margin-top: 40px;
 }

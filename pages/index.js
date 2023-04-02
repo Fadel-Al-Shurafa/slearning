@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import homeStyle from '@/styles/style.module.css'
+import Login from '../components/Login'
 
 
 
@@ -15,7 +16,7 @@ export default function Home() {
       
       <div className={homeStyle.WelcomePage}>
           <Image 
-          src="/images/home.jpg" 
+          src="/images/home.png" 
           width={1920} 
           height={1000}
 
@@ -43,16 +44,37 @@ export default function Home() {
                   />
               </div>
               <div className={homeStyle.learnFlex}>
-                <h3>Learn about  majors?</h3>
+                <div className={homeStyle.learnContent}>
+                  <h3>Learn about  majors?</h3>
+                </div>
+              </div>
+
+          </div>
+          <div className={homeStyle.postContainer}>
+              
+              <div className={homeStyle.postFlex}>
+                <div className={homeStyle.postContent}>
+                  <h3>Post your problems</h3>
+                </div>
+              </div>
+              <div className={homeStyle.postFlex}>
+                  <Image 
+                    src="/images/post-q.png"
+                    width="600"
+                    height="600"
+                  />
               </div>
 
           </div>
 
-          <div></div>
+
+
+          <Login />
 
       </div>
 
-      <div></div>
+      
+      
     
     
       

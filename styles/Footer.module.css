@@ -1,0 +1,26 @@
+.FooterContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: #000;
+    height: 86px;
+}
+.FooterFlexItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 12px 20px;
+}
+.FooterFlexItems h3{
+    color: #fff;
+    padding: 0 40px;
+    margin-top: 15px;
+}
+.FooterFlexItems h3:hover{
+    color: #fff;
+    border-bottom: 2px #fff solid ;
+    cursor: pointer;
+    
+}
