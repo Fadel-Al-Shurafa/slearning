@@ -1,0 +1,41 @@
+.SWEmajorsBody{
+    height: 1000vh;
+    width: 100%;
+    font-size: 130%;
+}
+.H1text {
+    text-align: center;
+    padding: 100px 40px;
+}
+.ContainerContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FlexContent{
+    width: 600px;
+    margin: 40px 5px;
+}
+
+
+
+
+
+
+
+
+.SWEmajorsContainer{
+    height: 110vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.SWEmajorsFlexItems{
+    background-color: #000;
+    height: 200px;
+    width: 300px;
+
+}

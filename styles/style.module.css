@@ -1,6 +1,6 @@
 .homeBody{
     margin-top: 300px;
-    height: 400vh;
+    height:100%;
 }
 .Why{
     text-align: center;
@@ -48,4 +48,9 @@
 .postContent{
     margin-left: 160px;
     margin-top: 40px;
+}
+
+.WhiteSpace{
+    height: 200px;
+    width: 100%;
 }

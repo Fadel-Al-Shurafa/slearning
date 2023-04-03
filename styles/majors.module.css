@@ -1,0 +1,59 @@
+.majorsBody{
+    height: 120vh;
+    width: 100%;
+}
+.majorsContainer{
+    height: 110vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.majorsFlexItems{
+    
+
+}
+.text{
+    margin-top: 110px;
+    color: #fff;
+}
+.SWE{
+    width: 370px;
+    height: 261px;
+    background: #2C045F;
+    border: 2px solid #8600D9;
+    box-shadow: 0px 0px 20px 20px rgba(156, 0, 196, 0.25);
+    border-radius: 60px;
+    
+
+
+}
+.CSE{
+    width: 370px;
+    height: 261px;
+    
+    background: #002584;
+    border: 2px solid #0047FF;
+    box-shadow: 0px 0px 20px 20px rgba(5, 0, 255, 0.25);
+    border-radius: 60px;
+}
+.Cyber{
+    width: 370px;
+    height: 261px;
+
+    background: #6C0000;
+    border: 2px solid #aa0000;
+    box-shadow: 0px 0px 20px 20px rgba(255, 0, 0, 0.25);
+    border-radius: 60px;
+
+}
+.DataS{
+    width: 370px;
+    height: 261px;
+    
+    background: #005513;
+    border: 2px solid #07B703;
+    box-shadow: 0px 0px 20px 20px rgba(0, 216, 60, 0.25);
+    border-radius: 60px;
+}
