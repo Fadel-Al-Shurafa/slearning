@@ -11,22 +11,22 @@ const majors = () => {
 
                 <div className={majorsStyles.majorsFlexItems}>
                     <div className={majorsStyles.SWE}>
-                        <Link href='/SWEmajors'><h2 className={majorsStyles.text}>SWE</h2></Link>
+                        <Link href='/SWE/SWEmajors'><h2 className={majorsStyles.text}>SWE</h2></Link>
                     </div>
                 </div>
                 <div className={majorsStyles.majorsFlexItems}>
                     <div className={majorsStyles.CSE}>
-                        <h2 className={majorsStyles.text}>CSE</h2>
+                        <Link href='/CSE/CSEmajors'><h2 className={majorsStyles.text}>CSE</h2></Link>
                     </div>
                 </div>
                 <div className={majorsStyles.majorsFlexItems}>
                     <div className={majorsStyles.Cyber}>
-                        <h2 className={majorsStyles.text}>Cyber</h2>
+                        <Link href='/Cyber/Cybermajors'><h2 className={majorsStyles.text}>Cyber</h2></Link>
                     </div>
                 </div>
                 <div className={majorsStyles.majorsFlexItems}>
                     <div className={majorsStyles.DataS}>
-                        <h2 className={majorsStyles.text}>Data Science</h2>
+                        <Link href='/DataS/DataSmajors'><h2 className={majorsStyles.text}>Data Science</h2></Link>
                     </div>
                 </div>
 

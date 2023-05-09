@@ -5,9 +5,9 @@ const Header = () => {
     <div className={HeaderStyles.HeaderContainer}>
 
         <div className={HeaderStyles.headerFlexItems}>
-            <h3>Sign up</h3>
-            <h3>Login</h3>
-            <h3>Engilsh/عربي</h3>
+            <h4>Sign up</h4>
+            <h4>Login</h4>
+            <h4>Engilsh/عربي</h4>
         </div>
         <div className={HeaderStyles.headerFlexItems}>
             <Image src='/images/SLearning_Logo.png' width={90} height={70} />
