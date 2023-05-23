@@ -135,7 +135,7 @@ const MachineLearning = () => {
           <div class="container ">
             <div>
 
-              <h4><b>Courses to start Data Analysts</b></h4>
+              <h4><b>Courses to start Machine Learning</b></h4>
               <div className={SWEmajorsStyles.Space200}></div>
 
               <div className='d-flex justify-content-around'>

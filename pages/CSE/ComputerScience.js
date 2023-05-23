@@ -55,7 +55,9 @@ const ComputerScience  = () => {
                     </div>
                     <div className="col-6">
                         <div className="p-3 border bg-light" style={{ width: '18rem', height: '16rem'}}>
-                        <Link href='/CSE/Systems-Analyst.'><h2 className="text-center">Systems Analyst</h2></Link>
+                        <h2 className="text-center">Systems Analyst</h2>
+                            {/*this section with Eng.Fadel*/}
+
                         </div>
                     </div>
                     <div className="col-6">
@@ -70,12 +72,13 @@ const ComputerScience  = () => {
                     </div>
                     <div className="col-6">
                         <div className="p-3 border bg-light" style={{ width: '18rem', height: '16rem'}}>
-                            <h2 className="text-center">AI Engineer</h2>
+                            <Link href='/CSE/Artificial-Intelligencs-Engineer'><h2 className="text-center">Artificial Intelligencs Engineer</h2></Link>
                         </div>
                     </div>
                     <div className="col-6">
                         <div className="p-3 border bg-light" style={{ width: '18rem', height: '16rem'}}>
-                            <h2 className="text-center">Computer Hardware Engineering</h2>
+                            <Link href='/CSE/Computer-Hardware-Engineering'><h2 className="text-center">Computer Hardware Engineering</h2></Link>
+
                         </div>
                     </div>
                 </div>

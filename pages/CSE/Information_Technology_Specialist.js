@@ -13,7 +13,7 @@ const ITSpecialist = () => {
             <div class="row">
 
               <div class="col">
-                <h4><b>what is IT Specialist</b></h4>
+                <h4><b>What is IT Specialist</b></h4>
                 <p>
                   An IT (Information Technology) Specialist is a professional who specializes in managing
                   and maintaining computer systems, networks, and other IT infrastructure in an organization.<br />IT
@@ -100,7 +100,7 @@ const ITSpecialist = () => {
 
           <div class="container ">
             <div>
-              <h4><b>Courses to start Data Analysts</b></h4>
+              <h4><b>Courses to start Information Technology Specialist</b></h4>
               <div className={SWEmajorsStyles.Space200}></div>
               <div className='d-flex justify-content-around'>
                 <div class="p-2">

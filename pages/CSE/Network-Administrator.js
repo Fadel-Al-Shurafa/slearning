@@ -1,7 +1,7 @@
 import SWEmajorsStyles from '@/styles/SWEmajors.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-const SysAnalyst = () => {
+const NetworkAdministrator = () => {
   return (
     <>
       <div className={SWEmajorsStyles.SWEmajorsBody}>
@@ -13,7 +13,7 @@ const SysAnalyst = () => {
             <div>
               <div className={SWEmajorsStyles.fontSize130}>
                 <div className={SWEmajorsStyles.Space100}></div>
-                <h3><b>who is network administrator ?</b></h3>
+                <h3><b>Who is network administrator ?</b></h3>
                 <p>
                   A network administrator is an IT professional who ensures that an organization’s computer networks—groups of
                   computers that share information with one another—are operating to meet the needs of the organization. They can
@@ -114,7 +114,7 @@ const SysAnalyst = () => {
 
           <div class="container ">
             <div>
-              <h4><b>Courses to start Data Analysts</b></h4>
+              <h4><b>Courses to start Network Administrator</b></h4>
               <div className={SWEmajorsStyles.Space200}></div>
               <div className='d-flex justify-content-around'>
                 <div class="p-2">
@@ -163,4 +163,4 @@ const SysAnalyst = () => {
     </>
   )
 }
-export default SysAnalyst
+export default NetworkAdministrator
