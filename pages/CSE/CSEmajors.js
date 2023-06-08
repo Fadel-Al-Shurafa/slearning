@@ -1,4 +1,4 @@
-import SWEmajorsStyles from '@/styles/SWEmajors.module.css'
+import SWEmajorsStyles from '../styles/SWEmajors.module.css'
 import Image from 'next/image'
 const SWEmajors = () => {
   return (

@@ -1,11 +1,12 @@
 .Loginbody{
     background-color: #F7F7F7;
     width: 100%;
-    padding: 200px;
+    padding: 400px 200px;
 }
 .loginContainer{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
@@ -30,18 +31,27 @@
 
 .BtnContainer{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 60px;
     align-items: center;
+    text-align: center;
+    justify-content: center;
     
+}
+.BtnFlex{
+    margin: 60px 0;
 }
 .Botton{
     background-color: #000;
     color: #fff;
-    padding: 8px 36px;
+    padding: 16px 66px;
     border: none;
+    font-size: 160%;
 }
 .Botton:hover{
     opacity: 0.7 ;
 }
 
+.loginIMG {
+    width: 70%;
+}

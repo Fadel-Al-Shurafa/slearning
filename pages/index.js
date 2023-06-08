@@ -1,102 +1,148 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import homeStyle from '@/styles/style.module.css'
-import Login from '../components/Login'
-import Link from 'next/link'
 
+import Image from "next/image";
+import homeStyle from "../styles/style.module.css";
+import Login from "../components/Login";
+import Link from "next/link";
 
-
-export default function Home() {
+const Home = () =>  {
+  
   return (
     <>
-      <Head>
-        <title>SLearning</title>
-        <meta name='keywords' content='SWE418 project'/>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link 
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
-          rel="stylesheet" 
-          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
-          crossorigin="anonymous" 
-
-        />
-
-      </Head>
-      <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" 
-        crossorigin="anonymous">
-
-      </script>
       
-      
-      <div className={homeStyle.WelcomePage}>
-          <Image 
-          src="/images/home.png" 
-          width={1920} 
-          height={1000}
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossOrigin="anonymous"
+      ></script>
 
-          />
-          
+      <div>
+        <img className={homeStyle.homeimg} src="/images/home.png" alt="" />
       </div>
+      <div className={homeStyle.Space400}></div>
 
-      <div className={homeStyle.homeBody}>
-
-        <div className={homeStyle.Why}>
-            <h2>Why SPLearing?</h2>
-            <p> We will help students who are about to graduate or start in their academic fields strengthening their abilities 
-                and honing them in accordance with the demands of the Saudi Arabian labor market.
-                We will focuses on offering educational programs and courses that will help students
-                grow and be highly competitive in the job market.
+      <div className={homeStyle.HomeBody}>
+        <div className="justify-content-center">
+          <div className="p-2">
+            <h2 className="text-center">Why SPLearing?</h2>
+          </div>
+          <div className={homeStyle.Space50}></div>
+          <div className="p-2">
+            <p className={homeStyle.Paragraph}>
+              We will help students who are about to graduate or start in their
+              academic fields strengthening their abilities and honing them in
+              accordance with the demands of the Saudi Arabian labor market. We
+              will focuses on offering educational programs and courses that
+              will help students grow and be highly competitive in the job
+              market.
             </p>
+          </div>
         </div>
 
-        <div className={homeStyle.LearnContainer}>
-            <div className={homeStyle.learnFlex}>
-                <Image 
-                  src="/images/learn-major.png"
-                  width="600"
-                  height="600"
-                />
-            </div>
-            <div className={homeStyle.learnFlex}>
-              <div className={homeStyle.learnContent}>
-                <h3>Learn about  majors?</h3>
-              </div>
-              <div className={homeStyle.learnContent}>
-                <Link href='/majors'>Learn more</Link>
-              </div>
-            </div>
+        <div   className={homeStyle.Space400}></div>
 
+        <div id="Majors" className={homeStyle.container}>
+          
+          <div className="p-5">
+            <img className={homeStyle.ImageMajros} src="/images/learn-major.png"alt="" />
+          </div>
+          
+          <div className="p-5">
+            <div>
+              <div className={homeStyle.Space50}></div>
+              <div>
+                <h3>Learn about majors?</h3>
+              </div>
+              <div className={homeStyle.Space50}></div>
+              <ul>
+                <li className="col-8">
+                  Four distinct areas within the field of computers are
+                  presented: software engineering, computer science,
+                  cybersecurity, and data science.
+                </li>
+                <br />
+                <li className="col-8">
+                  Experts are available to provide insights into each
+                  specialization.
+                </li>
+                <br />
+                <li className="col-8">
+                  Resources are available to help those interested in gaining a
+                  comprehensive understanding or simply learning more about
+                  these areas.
+                </li>
+                <br />
+                <li>
+                  There are many exciting opportunities within the field of
+                  computers.
+                </li>
+              </ul>
+              <div className={homeStyle.Space100}></div>
+              <div className={homeStyle.BtnMjors}>
+                <Link href="/majors">
+                  {" "}
+                  <h5>Learn more</h5>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className={homeStyle.postContainer}>
-            
-            <div className={homeStyle.postFlex}>
-              <div className={homeStyle.postContent}>
-                <h3>Post your problems</h3>
+
+        <div  className={homeStyle.Space400}></div>
+
+        <div id="Posts" className="d-flex justify-content-center flex-wrap ">
+          <div className="p-2">
+            <div>
+              <div>
+                <div className={homeStyle.Space50}></div>
+                <div>
+                  <h3>Post your problems</h3>
+                </div>
+                <div className={homeStyle.Space50}></div>
+                <ul>
+                  <li className="col-8">
+                    Four distinct areas within the field of computers are
+                    presented: software engineering, computer science,
+                    cybersecurity, and data science.
+                  </li>
+                  <br />
+                  <li className="col-8">
+                    Experts are available to provide insights into each
+                    specialization.
+                  </li>
+                  <br />
+                  <li className="col-8">
+                    Resources are available to help those interested in gaining
+                    a comprehensive understanding or simply learning more about
+                    these areas.
+                  </li>
+                  <br />
+                  <li>
+                    There are many exciting opportunities within the field of
+                    computers.
+                  </li>
+                </ul>
+                <div className={homeStyle.Space100}></div>
+                <div className={homeStyle.BtnMjors}>
+                  <Link href="/PostSection/PostQA">
+                    {" "}
+                    <h5>Learn more</h5>
+                  </Link>
+                </div>
               </div>
             </div>
-            <div className={homeStyle.postFlex}>
-                <Image 
-                  src="/images/post-q.png"
-                  width="600"
-                  height="600"
-                />
-            </div>
-
+          </div>
+          <div className="p-2">
+            <Image src="/images/post-q.png" width="600" height="600" alt="" />
+          </div>
         </div>
-
+        <div className={homeStyle.Space400}></div>
         <Login />
 
-        <div className={homeStyle.WhiteSpace}></div>
-
+        <div className={homeStyle.Space400}></div>
       </div>
-
-      
-      
-    
-    
-      
     </>
-  )
+  );
 }
+
+export default Home
+

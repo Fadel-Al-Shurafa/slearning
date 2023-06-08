@@ -1,0 +1,127 @@
+/* AQ section*/
+.UserQAPosts{
+    padding: 100px 0;
+
+    height: 100%;
+    background: #D9D9D9;
+    border-radius: 20px;
+    width: 99%;
+    margin: auto;
+    margin: 50px 0;
+
+}
+.UserQA{
+    height: 100%;
+    padding: 50px 20px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    width: 96%;
+    padding-top: 30px;
+    margin: auto;
+}
+.UserProile{
+    height: 160px;
+    padding: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+
+}
+.UserProile h3{
+    margin-left: 20px;
+
+}
+.UserImg{
+    background: #000;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.CreatePostBotton{
+    background: #6D2222;
+    border-radius: 30px;
+    color: #fff;
+    padding: 10px 42px ;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 47px;
+    text-decoration: none;
+    transition: all 0.4s ;
+    cursor: pointer;
+
+}
+
+
+/* Videos section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* chating section */
+.Chatbody{
+    margin: 40px 0;
+}
+.inputbody{
+    margin-top: 200px;
+}
+.containerChatQA{
+    padding: 30px 50px;
+    background-color: #f5f3f3;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.inputChat[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 80%;
+ }
+ .sendToChat{
+    padding: 30px 0;
+
+    height: 100%;
+    background: #e6e6e6;
+    border-radius: 20px;
+    width: 99%;
+    margin: auto;
+    margin: 50px 0;
+ }
+ .TextChat{
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+    
+ }
+ .BTNsend {
+    background-color: green;
+    height: 100%;
+    width: 100%;
+    padding: 3px 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 80%;
+ }
+ .BTNback {
+    background-color: rgb(156, 1, 1);
+    height: 100%;
+    width: 100%;
+    padding: 3px 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 80%;
+ }

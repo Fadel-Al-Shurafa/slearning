@@ -1,56 +1,257 @@
+.body{
+    font-size: 140%;
+    
+}
+.HomeBody{
+    width: 100%;
+    padding: 10px;
+}
 .homeBody{
-    margin-top: 300px;
+    
     height:100%;
 }
-.Why{
-    text-align: center;
-    margin: auto;
+.SpaceW200 {
+    
+    width: 200px;
+}
+
+.Space400 {
+    height: 400px;
     width: 100%;
-    
-    
 }
-.Why h2{
-    margin-bottom: 100px;
-    font-size: 32px;
-}    
-.Why p{
-    margin: 10px auto 100px auto;
-    font-size: 22px;
-    width: 60%;
-} 
-
-.LearnContainer{
-    margin: 400px 0;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 180px;
-    
-    
-}
-.learnFlex{
-    margin: 0 40px a;
-}
-.learnContent{
-    margin-left: 60px;
-    margin-top: 40px;
-}
-
-.postContainer{
-    margin: 300px 0;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 160px;
-    
-}
-.postFlex{
-    margin: 0 40px a;
-}
-.postContent{
-    margin-left: 160px;
-    margin-top: 40px;
-}
-
-.WhiteSpace{
+.Space200 {
     height: 200px;
     width: 100%;
 }
+.Space100 {
+    height: 100px;
+    width: 100%;
+}
+.Space50 {
+    height: 50px;
+    width: 100%;
+}
+.marginRight{
+    padding: 0 100px;
+}
+.PaddingLR120{
+    padding: 0 120px;
+}
+.PaddingLR60{
+    padding: 0 60px;
+}
+
+.BtnMjors{
+    width: 160px;
+    height: 53px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.BtnMjors h5:hover{
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    
+}
+.Paragraph{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.fontSize130{
+    font-size: 130%;
+}
+.fontSize100{
+    font-size: 100%;
+}
+
+.text{
+    margin-top: 110px;
+    text-align: center;
+    color: #fff;
+}
+.SWE{
+    width: 370px;
+    height: 261px;
+    background: #2C045F;
+    border: 2px solid #8600D9;
+    box-shadow: 0px 0px 20px 20px rgba(156, 0, 196, 0.25);
+    border-radius: 60px;
+    
+
+
+}
+.CSE{
+    width: 370px;
+    height: 261px;
+    
+    background: #002584;
+    border: 2px solid #0047FF;
+    box-shadow: 0px 0px 20px 20px rgba(5, 0, 255, 0.25);
+    border-radius: 60px;
+}
+.Cyber{
+    width: 370px;
+    height: 261px;
+
+    background: #6C0000;
+    border: 2px solid #aa0000;
+    box-shadow: 0px 0px 20px 20px rgba(255, 0, 0, 0.25);
+    border-radius: 60px;
+
+}
+.DataS{
+    width: 370px;
+    height: 261px;
+    
+    background: #005513;
+    border: 2px solid #07B703;
+    box-shadow: 0px 0px 20px 20px rgba(0, 216, 60, 0.25);
+    border-radius: 60px;
+}
+
+/* Create Post BTN */
+.BTNa {
+    width: 583;
+    height: 196;
+    background: #6D2222;
+    border-radius: 30px;
+    color: #fff;
+    padding: 16px 32px ;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 77px;
+    text-decoration: none;
+    transition: all 0.4s ;
+    cursor: pointer;
+
+}.BTNa:hover {
+    color: #000; 
+    background: #924e4e;
+    
+}
+
+.bodyViewPosts{
+    width: 100%;
+}
+.MenuBG{
+    width: 100%;
+    height: 143px;
+    border-bottom: 2px solid rgb(126, 126, 126);
+    box-shadow: 5px 1px 20px;
+    background: #D9D9D9;
+}
+.inputSearch{
+    box-sizing: border-box;
+    width: 500px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 5px solid #000000;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.MenuTextSelected{
+    color: #000;
+    border-bottom: 2px #000 solid ;
+    cursor: pointer; 
+}
+.MenuText{
+    transition: all 0.4s ;
+    text-align: center;
+    color: #646464;
+    cursor: pointer;
+}
+.MenuText:hover{
+    
+    color: #646464;
+    border-bottom: 2px #000 solid ;
+    cursor: pointer; 
+}
+
+.BTNnone{
+    background-color: #D9D9D9;
+    border: none;
+}
+.BTNnoneW{
+    background-color: #fff;
+    border: none;
+}
+.BTNnoneWightB{
+    margin-top: 10px;
+    background-color: #ffffff;
+    border: none;
+    font-size: 140%;
+    width: 100%;
+    outline: none;
+}
+.CreateNewPostbody{
+    width: 80%;
+}
+.UserIMG{
+    width: 248px;
+    height: 243px;
+
+    background: #D9D9D9;
+    border-radius: 121.5px;
+}
+
+.raidoInput{
+    transform: scale(1.5);
+}
+.BorderText{
+    width: 98%;
+    height: 4px;
+    background: #000000;
+}
+.ImageMajros{
+
+    width: 600px;
+    height: 600px;
+}
+
+.homeimg{
+    width: 100%;
+    height: 1000;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.textarea{
+    width: 100%;
+    height: 250px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+@media screen and (max-width: 1600px) {
+    .ImageMajros{
+        width: 400px;
+        height: 400px;
+    }
+    .Paragraph{
+        width: 80%;
+    }
+    .container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 80%;
+        
+    }
+  }

@@ -1,39 +1,34 @@
-import SWEmajorsStyles from '@/styles/SWEmajors.module.css'
+import SWEmajorsStyles from "../styles/style.module.css"
 import Image from 'next/image'
 const SWEmajors = () => {
   return (
     <>
 
-        <div className={SWEmajorsStyles.SWEmajorsBody}>
-        <div className={SWEmajorsStyles.Space}></div>
-            <h1 className={SWEmajorsStyles.H1text}>Software Engineering</h1>
+        <div>
+            <div className={SWEmajorsStyles.Space200}></div>
+            <h1 className="text-center">Software Engineering</h1>
+            <div className={SWEmajorsStyles.Space200}></div>
 
-            <div className={SWEmajorsStyles.ContainerContent}>
-                <div className={SWEmajorsStyles.FlexContent}>
-                    <Image 
-                    src="/images/SWE-img.png"
-                    width="400"
-                    height="400"
-                    />
+            <div className="d-flex justify-content-center">
+                <div className="p-2">
+                <Image src="/images/SWE-img.png" width="400" height="400" />
                 </div>
-                <div className={SWEmajorsStyles.FlexContent}>
-                    <p> 
-                        Software Engineers are responsible for designing and developing effective software solutions
-                        to meet their clients' requirements. Most Software Engineers specialize in a certain area
-                        and could be responsible for working on anything from web applications and content
-                        management systems to databases and operating systems. 
-                        <br/>
-                        Software Engineers get involved throughout the entire project life cycle. 
-                        <br/>
-                        Graduates can find their first employment in technical and support roles that relate to their
-                        area of study and skills, and can include supporting the design, development and management of hardware,
-                        software, multimedia and systems integration services.
-                    </p>
+                <div className="p-5 m-5 col-4">
+                <p>
+                    A data scientist is a professional who specializes in analyzing
+                    and interpreting data. They use their to help organizations make
+                    better decisions and improve their operations. Data scientists
+                    typically have a strong background in mathematics, statistics, and
+                    computer science. They use this knowledge to analyze large data
+                    sets and find trends or patterns. Additionally, data scientists
+                    may develop new ways to collect and store data.
+                </p>
                 </div>
             </div>
+            <div className={SWEmajorsStyles.Space200}></div>
 
             <div className="container">
-                <div className={SWEmajorsStyles.Space}></div>
+                <div className={SWEmajorsStyles.Space200}></div>
                 <div className="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 ">
                     <div className="col-6" >
                         <div className="p-3 border bg-light" style={{ width: '18rem', height: '16rem'}}>
@@ -83,6 +78,7 @@ const SWEmajors = () => {
             </div>
 
         </div>
+        <div className={SWEmajorsStyles.Space400}></div>
 
     </>
     
