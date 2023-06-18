@@ -8,27 +8,42 @@ export default async function handler(
  
     const postId = req.query.id
 
+    const {image, userEmail, chatMassge } = await req.body;
 
+    // Delete Post
+   
     if (req.method === 'DELETE'){
-        const post = await prisma.questionPost.delete({
+        const QuestionPosts = await prisma.questionPost.delete({
             where: {
-                id: Number(postId)
+                id: String(postId)
             }
         })
-        res.json(post)
+        res.json(QuestionPosts)
     }else {
         console.log("Post could not be creadted");
     }
 
+
+// Create Chat
     if (req.method === 'POST'){
-        const post = await prisma.questionPost.findUnique({
+        const chat = await prisma.questionPost.update({
             where: {
-                id: Number(postId)
+                id: String(postId)
+            },
+            data: {
+                Chats: {
+                    create: {
+                        email: userEmail,
+                        chat: chatMassge,
+                        image: image,
+                    },
+                },
             }
         })
-        res.json(post)
+      
+        res.json(chat);
     }else {
-        console.log("Post could not be creadted");
+        console.log("Chat could not be creadted");
     }
 
 }

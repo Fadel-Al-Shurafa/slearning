@@ -1,0 +1,123 @@
+
+
+.containerCenter{
+    width: 760px;
+    margin: auto;
+    align-items: center;
+    
+}
+.containerSpace{
+    margin: 40px 0;
+    padding: 20px 0;
+    width: 100%;
+    
+}
+.containerCenter{
+    border: 1px #cac6c6 solid;
+    border-radius: 10px;
+    padding: 100px 60px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 30px rgba(2, 2, 2, 0.25);
+    border-radius: 50px;
+}
+.BTNnoneWightB{
+    background-color: none;
+}
+.BTNaNone{
+    background: #6D2222;
+    border-radius: 30px;
+    color: #fff;
+    padding: 4px 22px ;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 37px;
+    text-decoration: none;
+    transition: all 0.4s ;
+    cursor: pointer;
+    
+}
+.BTNaNone:hover{
+    color: #000; 
+    background: #924e4e;
+    
+}
+.DivBTN{
+    width: 20%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 800px) {
+    .body{
+        font-size: 70%;
+        width: 99%;
+        
+    }
+    .ProfileBody{
+        font-size: 70%;
+        width: 99%;
+        
+    }
+    .FlexSpecific {
+        width: 400px;
+     }
+    .Space400{
+        height: 200px;
+    }
+    .containerCenter{
+        border: 1px #cac6c6 solid;
+        border-radius: 10px;
+        padding: 100px 60px;
+        background: #FFFFFF;
+        box-shadow: 1px 1px 30px rgba(2, 2, 2, 0.25);
+        border-radius: 50px;
+        width: 100%;
+    }
+    .containerFlexSpecific{
+
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        
+    }
+    .FlexSpecific60{
+        width: 100%;
+    }
+    .Fleximg {
+        width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .body{
+        font-size: 50%;
+        width: 99%;
+        
+    }
+    .body h3{
+        font-size: 210%;
+        width: 99%;
+        
+    }
+    .containerCenter{
+        border: 1px #cac6c6 solid;
+        border-radius: 10px;
+        padding: 100px 20px;
+        background: #FFFFFF;
+        box-shadow: 1px 1px 30px rgba(2, 2, 2, 0.25);
+        border-radius: 50px;
+        width: 100%;
+    }
+    .BTNaNone{
+        background: #6D2222;
+        border-radius: 30px;
+        color: #fff;
+        padding: 4px 22px ;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 17px;
+        
+    }
+  }

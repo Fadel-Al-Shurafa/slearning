@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
+    "target": "es5",
     "sourceMap": true,
     "outDir": "dist",
     "strict": true,
     "lib": [
-      "DOM"
+      "dom",
+      "es2017"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -17,17 +19,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve"
-    // "allowJs": true,
-    // "skipLibCheck": true,
-    // "forceConsistentCasingInFileNames": true,
-    // "noEmit": true,
-    // "incremental": true,
-    // "esModuleInterop": true,
-    // "module": "esnext",
-    // "moduleResolution": "node",
-    // "resolveJsonModule": true,
-    // "isolatedModules": true,
-    // "jsx": "preserve"
   },
   "include": [
     "next-env.d.ts",
@@ -35,8 +26,15 @@
     "**/*.tsx",
     "components/Layout.js",
     "pages/signin.jsx",
-    "pages/api/auth/signup.js"
-, "pages/api/loginAPI.tsx", "pages/api/auth/[...nextauth].js"  ],
+    "pages/api/auth/signup.js",
+    "pages/api/loginAPI.tsx",
+    "pages/api/auth/[...nextauth].js",
+    "pages/api/PostQaAPI.ts",
+    "pages/PostSection/CreateNewPost.jsx",
+    "pages/PostSection/PostQA.tsx",
+    "components/ImageForm.js",
+    "pages/PostSection/test.tsx"
+  ],
   "exclude": [
     "node_modules"
   ]

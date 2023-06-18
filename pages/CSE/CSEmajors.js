@@ -1,92 +1,112 @@
-import SWEmajorsStyles from '../styles/SWEmajors.module.css'
-import Image from 'next/image'
-const SWEmajors = () => {
+import ComputerScienceStyles from "../../styles/style.module.css";
+import Image from "next/image";
+import Link from "next/link";
+
+const ComputerScience = () => {
   return (
     <>
+      <div className={ComputerScienceStyles.body}>
+        <div className="container">
+          <div className={ComputerScienceStyles.Space200}></div>
+          <h1 className="text-center">Computer Science</h1>
 
-        <div className={SWEmajorsStyles.SWEmajorsBody}>
-        <div className={SWEmajorsStyles.Space}></div>
-            <h1 className={SWEmajorsStyles.H1text}>Software Engineering</h1>
-
-            <div className={SWEmajorsStyles.ContainerContent}>
-                <div className={SWEmajorsStyles.FlexContent}>
-                    <Image 
-                    src="/images/SWE-img.png"
-                    width="400"
-                    height="400"
-                    />
-                </div>
-                <div className={SWEmajorsStyles.FlexContent}>
-                    <p> 
-                        Software Engineers are responsible for designing and developing effective software solutions
-                        to meet their clients' requirements. Most Software Engineers specialize in a certain area
-                        and could be responsible for working on anything from web applications and content
-                        management systems to databases and operating systems. 
-                        <br/>
-                        Software Engineers get involved throughout the entire project life cycle. 
-                        <br/>
-                        Graduates can find their first employment in technical and support roles that relate to their
-                        area of study and skills, and can include supporting the design, development and management of hardware,
-                        software, multimedia and systems integration services.
-                    </p>
-                </div>
+          <div className={ComputerScienceStyles.ContainerContent}>
+            <div className={ComputerScienceStyles.Space200}></div>
+            <div className="d-flex justify-content-center">
+              <img
+                src="/images/CompSc-mainpage.png"
+                className={ComputerScienceStyles.majorsCSSCimg}
+              />
             </div>
+            <div className={ComputerScienceStyles.Space100}></div>
+            <div className={ComputerScienceStyles.FlexContent}>
+              <p>
+                Computer science is the study of computers and computational
+                systems. It is a broad field which includes everything from the
+                algorithms that make up software to how software interacts with
+                hardware to how well software is developed and designed.
+              </p>
+              <br />
+              <p>
+                Software Engineers get involved throughout the entire project
+                life cycle.
+              </p>
 
-            <div className="container">
-                <div className={SWEmajorsStyles.Space}></div>
-                <div className="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 ">
-                    <div className="col-6" >
-                        <div className="p-3 border bg-light" style={{ width: '18rem', height: '16rem'}}>
-                            <div className="justify-content-sm-center">
-                                <h2 className="text-center">SWE</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-6">
-                        <div classID={SWEmajorsStyles.majors}  className="p-3 border bg-light" style={{ width: '18rem', height: '16rem'}}>
-                            <h2 className="text-center">CSE</h2>
-                        </div>
-                    </div>
-                    <div className="col-6">
-                        <div className="p-3 border bg-light" style={{ width: '18rem', height: '16rem'}}>
-                            <h2 className="text-center">Cyber</h2>
-                        </div>
-                    </div>
-                    <div className="col-6">
-                        <div className="p-3 border bg-light" style={{ width: '18rem', height: '16rem'}}>
-                            <h2 className="text-center">Data Science</h2>
-                        </div>
-                    </div>
-                    <div className="col-6">
-                        <div className="p-3 border bg-light" style={{ width: '18rem', height: '16rem'}}>
-                            <h2 className="text-center">Data Science</h2>
-                        </div>
-                    </div>
-                    <div className="col-6">
-                        <div className="p-3 border bg-light" style={{ width: '18rem', height: '16rem'}}>
-                            <h2 className="text-center">Data Science</h2>
-                        </div>
-                    </div>
-                    <div className="col-6">
-                        <div className="p-3 border bg-light" style={{ width: '18rem', height: '16rem'}}>
-                            <h2 className="text-center">Data Science</h2>
-                        </div>
-                    </div>
-                    <div className="col-6">
-                        <div className="p-3 border bg-light" style={{ width: '18rem', height: '16rem'}}>
-                            <h2 className="text-center">Data Science</h2>
-                        </div>
-                    </div>
-                </div>
-                
-
+              <br />
+              <p>
+                Computer scientists use various mathematical algorithms, coding
+                procedures, and their expert programming skills to study
+                computer processes and develop new software and systems.
+              </p>
             </div>
-
+          </div>
         </div>
+        <div className={ComputerScienceStyles.Space200}></div>
+        <div className="container">
+          <div className={ComputerScienceStyles.containerFlexMajors}>
+            <div >
+              <div className={ComputerScienceStyles.MajorsLnks}>
+                <div className="justify-content-sm-center">
+                  <Link href="/CSE/Information_Technology_Specialist">
+                    <h3 className="text-center">
+                      information technology specialist
+                    </h3>
+                  </Link>
+                </div>
+              </div>
+              <div className={ComputerScienceStyles.MajorsLnks}>
+                <Link href="/CSE/Machine-Learning-Engineering">
+                  <h3 className="text-center">Machine Learning Engineering</h3>
+                </Link>
+              </div>
+            </div>
 
+            <div >
+              <div className={ComputerScienceStyles.MajorsLnks}>
+                <h3 className="text-center">Software Development</h3>
+                {/*this section with Eng.Fadel*/}
+              </div>
+              <div className={ComputerScienceStyles.MajorsLnks}>
+                <Link href="../DataS/SystemAnalyst">
+                  <h3 className="text-center">Systems Analyst</h3>
+                </Link>
+                {/*this section with Eng.Fadel*/}
+              </div>
+            </div>
+
+            <div >
+              <div className={ComputerScienceStyles.MajorsLnks}>
+                <Link href="/CSE/Network-Administrator">
+                  <h3 className="text-center">Network Administrator</h3>
+                </Link>
+              </div>
+              <div className={ComputerScienceStyles.MajorsLnks}>
+                <Link href="/CSE/Information-Security-Analyst">
+                  <h3 className="text-center">Information Security Analyst</h3>
+                </Link>
+              </div>
+            </div>
+            <div >
+              <div className={ComputerScienceStyles.MajorsLnks}>
+                <Link href="/CSE/Artificial-Intelligencs-Engineer">
+                  <h3 className="text-center">
+                    Artificial Intelligencs Engineer
+                  </h3>
+                </Link>
+              </div>
+              <div className={ComputerScienceStyles.MajorsLnks}>
+                <Link href="/CSE/Computer-Hardware-Engineering">
+                  <h3 className="text-center">Computer Hardware Engineering</h3>
+                </Link>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div className={ComputerScienceStyles.Space400}></div>
     </>
-    
-  )
-}
+  );
+};
 
-export default SWEmajors
+export default ComputerScience;

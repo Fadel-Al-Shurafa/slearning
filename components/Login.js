@@ -5,36 +5,31 @@ import LoginStyles from "../styles/Login.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-
 const login = () => {
   const { data: session, status } = useSession();
   if (status === "authenticated") {
-    return (
-      <div>
-       
-      </div>
-    );
+    return <div></div>;
   } else {
     return (
-      <div>
-        <div className={LoginStyles.Loginbody}>
-          <div className={LoginStyles.loginContainer}>
-            <div className={LoginStyles.loginFlex}>
-              <div className="fade-in-left">
-                <img
-                  className={LoginStyles.loginIMG}
-                  src="/images/loginIMG.png"
-                />
-              </div>
+      <div className={LoginStyles.Loginbody}>
+        <div className={LoginStyles.loginContainer}>
+          <div className={LoginStyles.loginFlex}>
+            <div className="fade-in-left">
+              <img
+                className={LoginStyles.loginIMG}
+                src="/images/loginIMG.png"
+              />
             </div>
-            <div className={LoginStyles.loginFlex}>
-              <div className={LoginStyles.BtnContainer}>
-                <div className={LoginStyles.BtnFlex}>
-                  <h1> Sign in with Google Account  </h1>
-                </div>
-                <div className={LoginStyles.BtnFlex}>
-                  <button className={LoginStyles.Botton} onClick={() => signIn()}>Sign in with </button>
-                </div>
+          </div>
+          <div className={LoginStyles.loginFlex}>
+            <div className={LoginStyles.BtnContainer}>
+              <div className={LoginStyles.BtnFlex}>
+                <h1> Sign in with Google Account </h1>
+              </div>
+              <div className={LoginStyles.BtnFlex}>
+                <button className={LoginStyles.Botton} onClick={() => signIn()}>
+                  Sign{" "}
+                </button>
               </div>
             </div>
           </div>
@@ -44,25 +39,31 @@ const login = () => {
   }
   return (
     <div>
-        <div className={LoginStyles.Loginbody}>
-          <div className={LoginStyles.loginContainer}>
-            <div className={LoginStyles.loginFlex}>
-              <div className="fade-in-left">
-                <img
-                  src="/images/loginIMG.png"
-                />
-              </div>
+      <div className={LoginStyles.Loginbody}>
+        <div className={LoginStyles.loginContainer}>
+          <div className={LoginStyles.loginFlex}>
+            <div className="fade-in-left">
+              <img
+                className={LoginStyles.loginIMG}
+                src="/images/loginIMG.png"
+              />
             </div>
-            <div className={LoginStyles.loginFlex}>
-              <div className={LoginStyles.BtnContainer}>
-                <div className={LoginStyles.BtnFlex}>
-                  <button className={LoginStyles.Botton} onClick={() => signIn()}>Sign in</button>
-                </div>
+          </div>
+          <div className={LoginStyles.loginFlex}>
+            <div className={LoginStyles.BtnContainer}>
+              <div className={LoginStyles.BtnFlex}>
+                <h1> Sign in with Google Account </h1>
+              </div>
+              <div className={LoginStyles.BtnFlex}>
+                <button className={LoginStyles.Botton} onClick={() => signIn()}>
+                  Sign {" "}
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
   );
 };
 

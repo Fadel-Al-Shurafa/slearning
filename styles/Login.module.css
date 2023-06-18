@@ -2,6 +2,7 @@
     background-color: #F7F7F7;
     width: 100%;
     padding: 400px 200px;
+    font-size: 80%;
 }
 .loginContainer{
     display: flex;
@@ -10,8 +11,8 @@
     align-items: center;
     text-align: center;
 }
-.Flex{
-    margin: 0 40px;
+.loginFlex{
+    width: 40%;
 }
 .empty{
     background-color: #000;
@@ -39,7 +40,10 @@
     
 }
 .BtnFlex{
-    margin: 60px 0;
+    margin: 40px 0;
+}
+.BtnFlex h1{
+    font-size: 220%;
 }
 .Botton{
     background-color: #000;
@@ -53,5 +57,67 @@
 }
 
 .loginIMG {
-    width: 70%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+    .Loginbody{
+        padding: 400px 100px;
+        font-size: 90%;
+    }
+    .loginContainer{
+        justify-content: space-around;
+    }
+    .BtnFlex{
+        margin: 30px 0;
+    }
+    .BtnFlex h1{
+        font-size: 180%;
+    }
+    .Botton{
+        padding: 16px 36px;
+        font-size: 100%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .Loginbody{
+        padding: 200px 100px;
+        font-size: 100%;
+    }
+    .loginContainer{
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .loginFlex{
+        width: 60%;
+    }
+    .BtnFlex h1{
+        font-size: 130%;
+    }
+    .Botton{
+        padding: 10px 30px;
+        font-size: 100%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .Loginbody{
+        padding: 100px 20px;
+        font-size: 100%;
+    }
+    .loginFlex{
+        width: 70%;
+    }
+    .BtnFlex h1{
+        font-size: 130%;
+    }
+    .Botton{
+        padding: 10px 30px;
+        font-size: 100%;
+    }
+}
+@media screen and (max-width: 450px) {
+   
 }

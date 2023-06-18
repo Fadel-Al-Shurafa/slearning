@@ -1,7 +1,7 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import { PrismaAdapter } from "@auth/prisma-adapter";
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient, Role } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
@@ -13,5 +13,18 @@ export default NextAuth({
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
   ],
-  sercret: process.env.JWT_SECRET,
-});
+  callbacks: {
+    async jwt({token, user}) {
+      return {...token, ...user};
+    },
+    async session({session, token, user}) {
+      session.user.role = user.role;
+      session.user.id = user.id
+      return session;
+    },
+  },
+}); 
+
+
+
+

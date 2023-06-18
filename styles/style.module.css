@@ -1,6 +1,7 @@
 .body{
     font-size: 140%;
     
+    
 }
 .HomeBody{
     width: 100%;
@@ -59,10 +60,36 @@
     height: 100%;
     
 }
+.MainMajorsLnks{
+    padding-top: 100px;
+    margin: 40px 20px;
+    width: 18rem;
+    height: 16rem;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+.MajorsLnks {
+    padding-top: 100px;
+    margin: 40px 0;
+    width: 18rem;
+    height: 16rem;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+.AutoM {
+    margin: auto;
+}
 .Paragraph{
     text-align: center;
-    width: 50%;
+    width: 80%;
     margin: auto;
+}
+.ParagraphLeft{
+
+    width: 80%;
+
 }
 .fontSize130{
     font-size: 130%;
@@ -117,7 +144,7 @@
 }
 
 /* Create Post BTN */
-.BTNa {
+.BTNaNone{
     width: 583;
     height: 196;
     background: #6D2222;
@@ -131,43 +158,39 @@
     text-decoration: none;
     transition: all 0.4s ;
     cursor: pointer;
-
-}.BTNa:hover {
+    
+}
+.BTNaNone:hover{
     color: #000; 
     background: #924e4e;
     
 }
-
 .bodyViewPosts{
     width: 100%;
 }
 .MenuBG{
     width: 100%;
-    height: 143px;
+    height: 90px;
     border-bottom: 2px solid rgb(126, 126, 126);
     box-shadow: 5px 1px 20px;
     background: #D9D9D9;
-}
-.inputSearch{
-    box-sizing: border-box;
-    width: 500px;
-    height: 60px;
-    background: #FFFFFF;
-    border: 5px solid #000000;
-    border-radius: 30px;
-    padding: 20px;
 }
 
 .MenuTextSelected{
     color: #000;
     border-bottom: 2px #000 solid ;
     cursor: pointer; 
+    font-size: 22px;
+}
+.TextPadding{
+    padding: 30px 50px;
 }
 .MenuText{
     transition: all 0.4s ;
     text-align: center;
     color: #646464;
     cursor: pointer;
+    font-size: 20px;
 }
 .MenuText:hover{
     
@@ -192,8 +215,11 @@
     width: 100%;
     outline: none;
 }
+
 .CreateNewPostbody{
     width: 80%;
+    margin: auto;
+    font-size: 16px;
 }
 .UserIMG{
     width: 248px;
@@ -202,6 +228,17 @@
     background: #D9D9D9;
     border-radius: 121.5px;
 }
+.CreateUserImg{
+    background: #000;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+.ProileIMG{
+    border-radius: 50px;
+    object-fit: none;
+}
+
 
 .raidoInput{
     transform: scale(1.5);
@@ -216,12 +253,31 @@
     width: 600px;
     height: 600px;
 }
-
+.majorsCSSCimg{
+    width: 800px;
+    height: 500px;
+}
+.webimg{
+    width: 800px;
+    height: 800px;
+}
+.ImageArchitect{
+    width: 90%;
+    height: 650px;
+}
 .homeimg{
     width: 100%;
-    height: 1000;
+    height: 800px;
+    background-image: url("/images/home.png");
+    background-color: #cccccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.homeH1{
+    text-align: center;
+    margin-top: 400px;
 }
 .container{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -229,6 +285,87 @@
     
 }
 
+
+
+
+.containerFlex{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.containerFlexMajors{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.flex {
+    margin: 0 10px;
+}
+.containerFlexSpecific{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.FrontEndBTN{
+    padding-top: 30px;
+    color: #fff;
+    text-align: center;
+    width: 279px;
+    height: 92px;
+    background: #16057C;
+    transition: all 0.5s ease-in-out;
+}
+.BackEndBTN{
+    padding-top: 30px;
+    color: #fff;
+    text-align: center;
+    width: 279px;
+    height: 92px;
+    background: #75009E;
+    transition: all 0.5s ease-in-out;
+}
+.FrontEndBTN:hover{
+    color: #000;
+    opacity: 0.7;
+}
+.BackEndBTN:hover{
+    color: #000;
+    opacity: 0.7;
+}
+.FlexCulom{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.FlexCulomMargin{
+    margin: 20px 60px;
+}
+.proileMargin{
+    margin: 40px 0;
+}
+.FlexSpecific {
+   width: 46%;
+}
+.FlexSpecific30{
+    width: 300px;
+}
+.FlexSpecific60{
+    width: 700px;
+}
+.Fleximg {
+    width: 100%;
+}
 .textarea{
     width: 100%;
     height: 250px;
@@ -240,10 +377,45 @@
     font-size: 16px;
     resize: none;
 }
-@media screen and (max-width: 1600px) {
+
+
+.ProfileBody{
+    height: 100%;
+    width: 100%;
+    
+}
+.ProfileBcackGround{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .body{
+        font-size: 100%;
+        
+    }
     .ImageMajros{
         width: 400px;
         height: 400px;
+    }
+    .majorsCSSCimg{
+        width: 80%;
+        height: 400px;
+    }
+    .webimg{
+        width: 100%;
+        height: 700px;
     }
     .Paragraph{
         width: 80%;
@@ -253,5 +425,60 @@
         flex-wrap: wrap;
         font-size: 80%;
         
+    }
+
+  }
+  @media screen and (max-width: 1000px) {
+    .body{
+        font-size: 100%;
+        
+    }
+    .FlexSpecific {
+        width: 700px;
+     }
+     .webimg{
+        width: 100%;
+        height: 5 00px;
+    }
+    .homeH1{
+        text-align: center;
+        margin-top: 300px;
+        font-size: 130%;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .body{
+        font-size: 70%;
+        width: 99%;
+        
+    }
+    .FlexSpecific {
+        width: 400px;
+     }
+    .containerFlexSpecific{
+
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        
+    }
+    .FlexSpecific60{
+        width: 100%;
+    }
+    .Fleximg {
+        width: 100%;
+    }
+    .ProfileBcackGround{
+        width: 80%;
+        height: 100%;
+        margin: auto;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .ProfileBcackGround{
+        width: 100%;
+        height: 100%;
+        margin: auto;
     }
   }
