@@ -47,9 +47,6 @@ model User {
   accounts      Account[]
   sessions      Session[]
   QuestionPosts QuestionPost[]
-  // VideoPosts       Post[]          @relation("VideoPosts")
-  // ResearchPosts    Post[]          @relation("ResearchPosts")
-  // favoritePosts    Post[]          @relation("favoritePosts")
 
   @@unique([name, image, email, id])
   @@index([email])
@@ -80,12 +77,6 @@ model QuestionPost {
   published Boolean    @default(false)
   createdAT DateTime   @default(now())
   updatedAT DateTime?  @updatedAt
-  // VideoPostsBy      User       @relation("VideoPosts", fields: [VideoPostsByid], references: [id])
-  // VideoPostsByid    String
-  // ResearchPostsBy   User       @relation("ResearchPosts", fields: [ResearchPostsByid], references: [id])
-  // ResearchPostsByid String
-  // favoritedBy       User?      @relation("favoritePosts", fields: [favoritedByid], references: [id])
-  // favoritedByid     String?
 
   user User @relation(fields: [name, image, email, userId], references: [name, image, email, id], onDelete: Cascade)
 
